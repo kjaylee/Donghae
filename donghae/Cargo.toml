@@ -1,0 +1,34 @@
+[package]
+name = "donghae"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# 비동기 런타임
+tokio = { version = "1.28", features = ["full"] }
+
+# libp2p 네트워킹 라이브러리
+libp2p = { version = "0.54.1", features = ["full"] }
+
+# 암호화 및 해싱 라이브러리
+ring = "0.16.20"
+sha2 = "0.10"
+
+# 직렬화 및 역직렬화 라이브러리
+serde = { version = "1.0", features = ["derive"] }
+bincode = "1.3"
+
+# WASM 관련 라이브러리
+wasmtime = { version = "0.30", features = ["async"] }
+wasmparser = "0.78"
+wasm-bindgen = "0.2"
+
+# 기타 유틸리티
+log = "0.4"
+env_logger = "0.9"
+rand = "0.8"
+futures = "0.3"
+hex = "0.4"
+
+# 추가적인 QUIC 전송 계층 지원
+libp2p-quic = "0.11.1"
