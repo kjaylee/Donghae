@@ -1,0 +1,13 @@
+[package]
+name = "p2p-quic-example"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+async-std = "1.10"
+libp2p = { version = "0.54.1" }
+libp2p-core = "0.42.0"
+libp2p-quic = { version = "0.11.1" }
+futures = "0.3"
+tokio = { version = "1.40.0", features = ["full"] }
+
